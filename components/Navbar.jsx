@@ -5,7 +5,7 @@ import { supabase } from '../lib/supabase';
 import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
-const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
